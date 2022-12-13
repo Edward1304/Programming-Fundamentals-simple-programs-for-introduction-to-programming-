@@ -1,0 +1,34 @@
+
+// Si el usuario en ninguno  de los 4 intentos acerta el numero
+// el programa  no lo deja continuar y le  manda el error
+
+// Si el usuario en el ultimo  intento acerta el numero
+// el programa  lo deja continuar.
+
+
+Algoritmo Prueba_Numero_de_errores
+	Definir A,B,C,N Como real
+	C=0
+	A=0
+	E=1
+	Repetir
+			Escribir " ingrese  un numero diferente  de 0  y menor que  50"
+			leer N
+			C=C+E
+			A=A+E
+		    
+		Hasta Que N <= 50 y N>0  o A>3
+		
+		Si A>3 y N>50 Entonces
+			Escribir " Superò el nuemro de intentos"
+			Escribir " ya no puede Continuar"
+		
+		FinSi
+		Si  N<=50 entonces
+		Escribir "Suma=  " N+100
+		Escribir "Resta=  " N-100
+		Escribir "Multiplicacion= " N*100
+		Escribir"Division=  " N/ 100
+	    Fin si
+		
+FinAlgoritmo
